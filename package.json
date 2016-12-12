@@ -5,14 +5,18 @@
   "main": "index.js",
   "scripts": {
     "start": "node dev-server.js",
-    "lint": "tslint src/*.tsx src/**/*.tsx"
+    "lint": "tslint src/*.tsx src/**/*.tsx",
+    "test": "jest"
   },
   "private": true,
   "author": "Lari Hoppula",
   "license": "MIT",
   "devDependencies": {
     "awesome-typescript-loader": "^3.0.0-beta.10",
+    "jest": "^17.0.3",
+    "react-test-renderer": "^15.4.1",
     "source-map-loader": "^0.1.5",
+    "ts-jest": "^17.0.3",
     "tslint": "^4.0.2",
     "tslint-react": "^2.0.0",
     "typescript": "^2.1.4",
@@ -20,9 +24,22 @@
     "webpack-dev-server": "^2.1.0-beta.12"
   },
   "dependencies": {
+    "@types/jest": "^16.0.1",
     "@types/react": "^0.14.54",
     "@types/react-dom": "^0.14.19",
+    "@types/react-test-renderer": "^15.4.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
   }
 }
