@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dev-server.js",
+    "start": "webpack-dev-server --mode development --open",
     "lint": "tslint src/*.tsx src/**/*.tsx",
     "test": "jest"
   },
@@ -25,6 +25,7 @@
     "tslint-react": "^3.6.0",
     "typescript": "^3.0.1",
     "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
