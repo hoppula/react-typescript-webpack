@@ -2,11 +2,8 @@ var webpack = require("webpack")
 var path = require("path")
 
 module.exports = {
-  entry: [
-    "webpack-dev-server/client?http://localhost:8080/",
-    "webpack/hot/dev-server",
-    "./src/index.tsx"
-  ],
+  mode: "development",
+  entry: ["./src/index.tsx"],
   output: {
     filename: "bundle.js",
     publicPath: "/dist/",
@@ -21,7 +18,7 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js"]
   },
 
-  plugins: [new webpack.HotModuleReplacementPlugin()],
+  plugins: [],
 
   module: {
     rules: [

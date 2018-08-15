@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open",
+    "start": "webpack-dev-server --hot --inline --open",
     "lint": "tslint src/*.tsx src/**/*.tsx",
     "test": "jest"
   },
