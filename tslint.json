@@ -1,23 +1,12 @@
 {
-  "extends": [
-    "tslint:latest",
-    "tslint-react",
-    "tslint-config-prettier"
-  ],
-  "rulesDirectory": [
-    "tslint-plugin-prettier"
-  ],
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+  "rulesDirectory": ["tslint-plugin-prettier"],
   "rules": {
     "prettier": true,
-    "interface-name": [
-      false
-    ],
-    "member-access": [
-      false
-    ],
-    "one-variable-per-declaration": [
-      false
-    ]
+    "interface-name": [false],
+    "member-access": [false],
+    "one-variable-per-declaration": [false],
+    "no-implicit-dependencies": [true, "dev"]
   },
   "jsRules": {}
 }
