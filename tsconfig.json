@@ -1,23 +1,21 @@
 {
   "compilerOptions": {
     "outDir": "./dist/",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "noImplicitAny": true,
+    "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "module": "commonjs",
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "module": "esnext",
+    "moduleResolution": "node",
     "target": "es5",
     "jsx": "react",
-    "lib": [
-      "es5",
-      "es6",
-      "dom"
-    ]
+    "lib": ["es5", "es6", "dom"]
   },
-  "include": [
-    "./**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["./**/*"],
+  "exclude": ["node_modules"]
 }
